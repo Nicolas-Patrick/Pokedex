@@ -1,0 +1,13 @@
+-- Configuração do git
+
+git config --global user.name Nicolas-Patrick
+git config --global user.email nicolasfadoni6@gmail.com
+
+-- Criar o gitignore
+dotnet new gitignore
+
+-- Criar o projeto MVC
+
+dotnet new mvc -o Pokedex
+
+cd Pokedex
