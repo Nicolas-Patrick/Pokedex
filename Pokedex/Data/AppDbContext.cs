@@ -34,8 +34,8 @@ public class AppDbContext : DbContext
 
         // Chave Estrangeira PokemonTipo - Tipo
         builder.Entity<PokemonTipo>()
-            .HasOne(pt => pt.Tipos)
-            .WithMany(t => t.Pokemon)
+            .HasOne(pt => pt.Tipo)
+            .WithMany(t => t.Pokemons)
             .HasForeignKey(pt => pt.TipoId);
         #endregion
     }
