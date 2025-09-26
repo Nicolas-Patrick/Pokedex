@@ -12,7 +12,7 @@
 <p>
     <a class="btn btn-danger px-5" asp-action="Create"><i class="bi bi-plus-circle"></i> Adicionar</a>
 </p>
-<table class="table">
+<table class="table table-striped" id="table">
     <thead>
         <tr>
             <th>
@@ -60,3 +60,14 @@
 }
     </tbody>
 </table>
+
+@section Styles {
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.4/css/dataTables.dataTables.min.css">
+}
+
+@section Scripts {
+    <script src="https://cdn.datatables.net/2.3.4/js/dataTables.min.js"></script>
+    <script>
+        let table = new DataTable('#myTable');
+    </script>
+}
